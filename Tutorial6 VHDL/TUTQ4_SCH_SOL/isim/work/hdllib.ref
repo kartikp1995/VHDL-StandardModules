@@ -1,0 +1,4 @@
+AR sch_sol_tbw testbench_arch "E:/Programs/VHDL/Tutorial6 VHDL/TUTQ4_SCH_SOL/SCH_SOL_TBW.ant" sub00/vhpl03 1397154591
+AR sch_sol behavioral "E:/Programs/VHDL/Tutorial6 VHDL/TUTQ4_SCH_SOL/SCH_SOL.vhd" sub00/vhpl01 1397154589
+EN sch_sol_tbw NULL "E:/Programs/VHDL/Tutorial6 VHDL/TUTQ4_SCH_SOL/SCH_SOL_TBW.ant" sub00/vhpl02 1397154590
+EN sch_sol NULL "E:/Programs/VHDL/Tutorial6 VHDL/TUTQ4_SCH_SOL/SCH_SOL.vhd" sub00/vhpl00 1397154588

@@ -1,0 +1,3 @@
+xst -ise "E:/Programs/VHDL/DFF/DFF.ise" -intstyle ise -ifn DFF.xst -ofn DFF.syr
+xst -ise "E:/Programs/VHDL/DFF/DFF.ise" -intstyle ise -ifn DFF.xst -ofn DFF.syr
+xst -ise "E:/Programs/VHDL/DFF/DFF.ise" -intstyle ise -ifn DFF.xst -ofn DFF.syr

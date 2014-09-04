@@ -1,0 +1,117 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="paths.js"></script><script src="eqns.js"></script><script>
+      var design = "MUX_8x1";
+      var device = "XA2C32A";
+      signals = new Array("output");
+      sigNegs = new Array("OFF");
+      sigTypes = new Array("LATCH");
+
+      
+        specSig["SEL0_SPECSIG"]=new Array("SEL<0>");
+      
+        specSig["SEL1_SPECSIG"]=new Array("SEL<1>");
+      
+        specSig["SEL2_SPECSIG"]=new Array("SEL<2>");
+      
+        specSig["input0_SPECSIG"]=new Array("input<0>");
+      
+        specSig["input1_SPECSIG"]=new Array("input<1>");
+      
+        specSig["input2_SPECSIG"]=new Array("input<2>");
+      
+        specSig["input3_SPECSIG"]=new Array("input<3>");
+      
+        specSig["input4_SPECSIG"]=new Array("input<4>");
+      
+        specSig["input5_SPECSIG"]=new Array("input<5>");
+      
+        specSig["input6_SPECSIG"]=new Array("input<6>");
+      
+        specSig["input7_SPECSIG"]=new Array("input<7>");
+      
+            pterms["FB1_0"]=new Array("input7_SPECSIG","SEL2_SPECSIG","SEL1_SPECSIG","SEL0_SPECSIG");
+          
+            pterms["FB1_1"]=new Array("/SEL2_SPECSIG","SEL1_SPECSIG","SEL0_SPECSIG","input3_SPECSIG");
+          
+            pterms["FB1_2"]=new Array("/SEL2_SPECSIG","/SEL1_SPECSIG","SEL0_SPECSIG","input1_SPECSIG");
+          
+            pterms["FB1_3"]=new Array("/SEL2_SPECSIG","SEL1_SPECSIG","/SEL0_SPECSIG","input2_SPECSIG");
+          
+            pterms["FB1_4"]=new Array("/SEL2_SPECSIG","/SEL1_SPECSIG","/SEL0_SPECSIG","input0_SPECSIG");
+          
+            pterms["FB1_5"]=new Array("SEL2_SPECSIG","/SEL1_SPECSIG","SEL0_SPECSIG","input5_SPECSIG");
+          
+            pterms["FB1_6"]=new Array("SEL2_SPECSIG","SEL1_SPECSIG","/SEL0_SPECSIG","input6_SPECSIG");
+          
+            pterms["FB1_7"]=new Array("SEL2_SPECSIG","/SEL1_SPECSIG","/SEL0_SPECSIG","input4_SPECSIG");
+          
+          d2["output"]=new Array("FB1_0","FB1_6","FB1_5","FB1_7","FB1_1","FB1_3","FB1_2","FB1_4");
+          clkNegs["output"]=1;
+              gblclk["output"]=new Array("EN_L");
+            prld["output"]="GND";
+
+      uimSignals = new Array();
+
+      uimSigNegs = new Array();
+
+      uimPterms = new Array();
+      
+
+      
+        function getEqnList() {
+          var str = "<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>";
+          str += "<center><h3>Equations</h3></center>";
+          str += "<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>";
+          for (s=0; s<uimSignals.length; s++) {
+            str += "<tr><td>";
+            str += retUimEqn(uimSignals[s]);
+            str += "</td></tr>";
+          }
+          for (s=0; s<signals.length; s++) {
+            str += "<tr><td>";
+            str += retEqn(signals[s]);
+            str += "</td></tr>";
+          }
+
+          var legend = retLegend();
+		      if (legend != "") {
+		        str += "<tr><td>" + legend + "</td></tr>";
+		      }
+
+          str += "</table>";
+          str += "<form><span class='pgRef'>";
+
+          if (!parent.leftnav.IsNS()) {
+            str += "<table width='90%' align='center'>";
+            str += "<tr><td align='left'><input type='button' value='back to top' ";
+            str += "onclick='javascript:parent.leftnav.showEqnAll()' ";
+            str += "onmouseover=\"window.status='goto top of page'; return true;\" ";
+            str += "onmouseout=\"window.status=''\">";
+            str += "</td>";
+            str += "<td align='right'>";
+            str += "<input type='button' value='print page' ";
+            str += "onclick='javascript:window.print()' ";
+            str += "onmouseover=\"window.status='print page'; return true;\" ";
+            str += "onmouseout=\"window.status=''\">";
+            str += "</td>";
+            str += "</tr></table>";
+          }
+          else {
+            str += "<table width='90%' align='center'>";
+            str += "<tr><td align='left'><a href='javascript:parent.leftnav.showEqnAll()'>back to top</a>";
+            str += "</td>";
+            str += "<td align='right'>";
+            str += "<a href='javascript:window.print()'>";
+            str += "print page</a>";
+            str += "</td>";
+            str += "</tr></table>";
+          }
+
+          str += "</span></form>";
+          str += "</body></html>";
+          return str;
+        }
+      
+    </script>
+</head></html>

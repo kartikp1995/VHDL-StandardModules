@@ -1,0 +1,9 @@
+[Inputs]
+cin
+=a[3:0]=
+=b[3:0]=
+[Outputs]
+cout
+v
+=sum[3:0]=
+[BiDir]

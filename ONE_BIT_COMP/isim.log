@@ -1,0 +1,31 @@
+ command line:
+   E:\Programs\VHDL\ONE_BIT_COMP\ONE_BIT_COMP_TBW_tbxr.exe
+     -intstyle  ise
+     -tclbatch  genExpectedResults.cmd
+
+Sun Mar 16 17:40:24 2014
+
+Total Line Count = 768
+
+ Elaboration time 0.015625 sec.
+
+ Estimate current memory usage 60.7191 Meg. 
+
+ Total signals 10
+ Total nets 5
+ Total signal drivers 5
+ Total blocks 7
+ Total primitive blocks 1
+ Total processes 5
+isim batch on 
+run all 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+quit 
+
+ Simulation time 0.0625 sec.
+
+ Estimate current memory usage 68.9316 Meg. 
+
+Sun Mar 16 17:40:24 2014
+

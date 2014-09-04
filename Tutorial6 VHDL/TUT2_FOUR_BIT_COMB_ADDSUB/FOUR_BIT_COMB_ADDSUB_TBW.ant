@@ -1,0 +1,255 @@
+--------------------------------------------------------------------------------
+-- Copyright (c) 1995-2003 Xilinx, Inc.
+-- All Right Reserved.
+--------------------------------------------------------------------------------
+--   ____  ____ 
+--  /   /\/   / 
+-- /___/  \  /    Vendor: Xilinx 
+-- \   \   \/     Version : 8.2i
+--  \   \         Application : ISE
+--  /   /         Filename : FOUR_BIT_COMB_ADDSUB_TBW.ant
+-- /___/   /\     Timestamp : Thu Apr 10 23:39:12 2014
+-- \   \  /  \ 
+--  \___\/\___\ 
+--
+--Command: 
+--Design Name: FOUR_BIT_COMB_ADDSUB_TBW
+--Device: Xilinx
+--
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_TEXTIO.ALL;
+USE IEEE.STD_LOGIC_ARITH.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+USE STD.TEXTIO.ALL;
+
+ENTITY FOUR_BIT_COMB_ADDSUB_TBW IS
+END FOUR_BIT_COMB_ADDSUB_TBW;
+
+ARCHITECTURE testbench_arch OF FOUR_BIT_COMB_ADDSUB_TBW IS
+    FILE RESULTS: TEXT OPEN WRITE_MODE IS "E:\Programs\VHDL\Tutorial6 VHDL\TUT2_FOUR_BIT_COMB_ADDSUB\FOUR_BIT_COMB_ADDSUB_TBW.ano";
+
+    COMPONENT FOUR_BIT_COMB_ADDSUB
+        PORT (
+            a0 : In std_logic;
+            a1 : In std_logic;
+            a2 : In std_logic;
+            a3 : In std_logic;
+            b0 : In std_logic;
+            b1 : In std_logic;
+            b2 : In std_logic;
+            b3 : In std_logic;
+            m : In std_logic;
+            cout : Out std_logic;
+            sum0 : Out std_logic;
+            sum1 : Out std_logic;
+            sum2 : Out std_logic;
+            sum3 : Out std_logic;
+            overflow : Out std_logic
+        );
+    END COMPONENT;
+
+    SIGNAL a0 : std_logic := '0';
+    SIGNAL a1 : std_logic := '0';
+    SIGNAL a2 : std_logic := '0';
+    SIGNAL a3 : std_logic := '0';
+    SIGNAL b0 : std_logic := '0';
+    SIGNAL b1 : std_logic := '0';
+    SIGNAL b2 : std_logic := '0';
+    SIGNAL b3 : std_logic := '0';
+    SIGNAL m : std_logic := '0';
+    SIGNAL cout : std_logic := '0';
+    SIGNAL sum0 : std_logic := '0';
+    SIGNAL sum1 : std_logic := '0';
+    SIGNAL sum2 : std_logic := '0';
+    SIGNAL sum3 : std_logic := '0';
+    SIGNAL overflow : std_logic := '0';
+
+    SHARED VARIABLE TX_ERROR : INTEGER := 0;
+    SHARED VARIABLE TX_OUT : LINE;
+
+    BEGIN
+        UUT : FOUR_BIT_COMB_ADDSUB
+        PORT MAP (
+            a0 => a0,
+            a1 => a1,
+            a2 => a2,
+            a3 => a3,
+            b0 => b0,
+            b1 => b1,
+            b2 => b2,
+            b3 => b3,
+            m => m,
+            cout => cout,
+            sum0 => sum0,
+            sum1 => sum1,
+            sum2 => sum2,
+            sum3 => sum3,
+            overflow => overflow
+        );
+
+        PROCESS    -- Annotation process
+            VARIABLE TX_TIME : INTEGER := 0;
+
+            PROCEDURE ANNOTATE_cout(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", cout, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, cout);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+            PROCEDURE ANNOTATE_sum0(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", sum0, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, sum0);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+            PROCEDURE ANNOTATE_sum1(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", sum1, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, sum1);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+            PROCEDURE ANNOTATE_sum2(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", sum2, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, sum2);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+            PROCEDURE ANNOTATE_sum3(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", sum3, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, sum3);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+            PROCEDURE ANNOTATE_overflow(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", overflow, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, overflow);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+        BEGIN
+            WAIT for 1 fs;
+            ANNOTATE_cout(0);
+            ANNOTATE_sum0(0);
+            ANNOTATE_sum1(0);
+            ANNOTATE_sum2(0);
+            ANNOTATE_sum3(0);
+            ANNOTATE_overflow(0);
+            ANNO_LOOP : LOOP
+                WAIT for 10 ns;
+                TX_TIME := TX_TIME + 10;
+                ANNOTATE_cout(TX_TIME);
+                ANNOTATE_sum0(TX_TIME);
+                ANNOTATE_sum1(TX_TIME);
+                ANNOTATE_sum2(TX_TIME);
+                ANNOTATE_sum3(TX_TIME);
+                ANNOTATE_overflow(TX_TIME);
+                WAIT for 10 ns;
+                TX_TIME := TX_TIME + 10;
+            END LOOP ANNO_LOOP;
+        END PROCESS;
+
+        PROCESS
+            BEGIN
+                -- -------------  Current Time:  40ns
+                WAIT FOR 40 ns;
+                a3 <= '1';
+                b1 <= '1';
+                -- -------------------------------------
+                -- -------------  Current Time:  80ns
+                WAIT FOR 40 ns;
+                m <= '1';
+                -- -------------------------------------
+                -- -------------  Current Time:  120ns
+                WAIT FOR 40 ns;
+                a2 <= '1';
+                b3 <= '1';
+                -- -------------------------------------
+                -- -------------  Current Time:  160ns
+                WAIT FOR 40 ns;
+                b2 <= '1';
+                -- -------------------------------------
+                -- -------------  Current Time:  220ns
+                WAIT FOR 60 ns;
+                a1 <= '1';
+                -- -------------------------------------
+                -- -------------  Current Time:  240ns
+                WAIT FOR 20 ns;
+                b0 <= '1';
+                -- -------------------------------------
+                -- -------------  Current Time:  280ns
+                WAIT FOR 40 ns;
+                a0 <= '1';
+                -- -------------------------------------
+                -- -------------  Current Time:  320ns
+                WAIT FOR 40 ns;
+                m <= '0';
+                -- -------------------------------------
+                -- -------------  Current Time:  10000ns
+                WAIT FOR 9680 ns;
+                a0 <= '0';
+
+                STD.TEXTIO.write(TX_OUT, string'("Total[]"));
+                STD.TEXTIO.writeline(RESULTS, TX_OUT);
+                ASSERT (FALSE) REPORT
+                    "Success! Simulation for annotation completed"
+                    SEVERITY FAILURE;
+            END PROCESS;
+
+    END testbench_arch;
+

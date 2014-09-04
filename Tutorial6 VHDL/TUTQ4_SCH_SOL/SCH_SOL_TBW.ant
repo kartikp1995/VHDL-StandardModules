@@ -1,0 +1,302 @@
+--------------------------------------------------------------------------------
+-- Copyright (c) 1995-2003 Xilinx, Inc.
+-- All Right Reserved.
+--------------------------------------------------------------------------------
+--   ____  ____ 
+--  /   /\/   / 
+-- /___/  \  /    Vendor: Xilinx 
+-- \   \   \/     Version : 8.2i
+--  \   \         Application : ISE
+--  /   /         Filename : SCH_SOL_TBW.ant
+-- /___/   /\     Timestamp : Fri Apr 11 00:02:11 2014
+-- \   \  /  \ 
+--  \___\/\___\ 
+--
+--Command: 
+--Design Name: SCH_SOL_TBW
+--Device: Xilinx
+--
+
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_TEXTIO.ALL;
+USE IEEE.STD_LOGIC_ARITH.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+USE STD.TEXTIO.ALL;
+
+ENTITY SCH_SOL_TBW IS
+END SCH_SOL_TBW;
+
+ARCHITECTURE testbench_arch OF SCH_SOL_TBW IS
+    FILE RESULTS: TEXT OPEN WRITE_MODE IS "E:\Programs\VHDL\Tutorial6 VHDL\TUTQ4_SCH_SOL\SCH_SOL_TBW.ano";
+
+    COMPONENT SCH_SOL
+        PORT (
+            A : In std_logic;
+            B : In std_logic;
+            C : In std_logic;
+            D : In std_logic;
+            E : In std_logic;
+            F : In std_logic;
+            O1 : Out std_logic;
+            O2 : Out std_logic;
+            O3 : Out std_logic;
+            O4 : Out std_logic;
+            O5 : Out std_logic;
+            O6 : Out std_logic;
+            O7 : Out std_logic;
+            O8 : Out std_logic
+        );
+    END COMPONENT;
+
+    SIGNAL A : std_logic := '0';
+    SIGNAL B : std_logic := '0';
+    SIGNAL C : std_logic := '0';
+    SIGNAL D : std_logic := '0';
+    SIGNAL E : std_logic := '0';
+    SIGNAL F : std_logic := '0';
+    SIGNAL O1 : std_logic := '0';
+    SIGNAL O2 : std_logic := '1';
+    SIGNAL O3 : std_logic := '1';
+    SIGNAL O4 : std_logic := '1';
+    SIGNAL O5 : std_logic := '1';
+    SIGNAL O6 : std_logic := '0';
+    SIGNAL O7 : std_logic := '0';
+    SIGNAL O8 : std_logic := '0';
+
+    SHARED VARIABLE TX_ERROR : INTEGER := 0;
+    SHARED VARIABLE TX_OUT : LINE;
+
+    BEGIN
+        UUT : SCH_SOL
+        PORT MAP (
+            A => A,
+            B => B,
+            C => C,
+            D => D,
+            E => E,
+            F => F,
+            O1 => O1,
+            O2 => O2,
+            O3 => O3,
+            O4 => O4,
+            O5 => O5,
+            O6 => O6,
+            O7 => O7,
+            O8 => O8
+        );
+
+        PROCESS    -- Annotation process
+            VARIABLE TX_TIME : INTEGER := 0;
+
+            PROCEDURE ANNOTATE_O1(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", O1, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, O1);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+            PROCEDURE ANNOTATE_O2(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", O2, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, O2);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+            PROCEDURE ANNOTATE_O3(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", O3, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, O3);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+            PROCEDURE ANNOTATE_O4(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", O4, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, O4);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+            PROCEDURE ANNOTATE_O5(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", O5, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, O5);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+            PROCEDURE ANNOTATE_O6(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", O6, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, O6);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+            PROCEDURE ANNOTATE_O7(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", O7, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, O7);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+            PROCEDURE ANNOTATE_O8(
+                TX_TIME : INTEGER
+            ) IS
+                VARIABLE TX_STR : String(1 to 4096);
+                VARIABLE TX_LOC : LINE;
+            BEGIN
+                STD.TEXTIO.write(TX_LOC, string'("Annotate["));
+                STD.TEXTIO.write(TX_LOC, TX_TIME);
+                STD.TEXTIO.write(TX_LOC, string'(", O8, "));
+                IEEE.STD_LOGIC_TEXTIO.write(TX_LOC, O8);
+                STD.TEXTIO.write(TX_LOC, string'("]"));
+                TX_STR(TX_LOC.all'range) := TX_LOC.all;
+                STD.TEXTIO.writeline(RESULTS, TX_LOC);
+                STD.TEXTIO.Deallocate(TX_LOC);
+            END;
+        BEGIN
+            WAIT for 1 fs;
+            ANNOTATE_O1(0);
+            ANNOTATE_O2(0);
+            ANNOTATE_O3(0);
+            ANNOTATE_O4(0);
+            ANNOTATE_O5(0);
+            ANNOTATE_O6(0);
+            ANNOTATE_O7(0);
+            ANNOTATE_O8(0);
+            ANNO_LOOP : LOOP
+                WAIT for 1 ns;
+                TX_TIME := TX_TIME + 1;
+                ANNOTATE_O1(TX_TIME);
+                ANNOTATE_O2(TX_TIME);
+                ANNOTATE_O3(TX_TIME);
+                ANNOTATE_O4(TX_TIME);
+                ANNOTATE_O5(TX_TIME);
+                ANNOTATE_O6(TX_TIME);
+                ANNOTATE_O7(TX_TIME);
+                ANNOTATE_O8(TX_TIME);
+                WAIT for 1 ns;
+                TX_TIME := TX_TIME + 1;
+            END LOOP ANNO_LOOP;
+        END PROCESS;
+
+        PROCESS
+            BEGIN
+                -- -------------  Current Time:  2ns
+                WAIT FOR 2 ns;
+                A <= '1';
+                D <= '1';
+                -- -------------------------------------
+                -- -------------  Current Time:  6ns
+                WAIT FOR 4 ns;
+                A <= '0';
+                F <= '1';
+                -- -------------------------------------
+                -- -------------  Current Time:  8ns
+                WAIT FOR 2 ns;
+                B <= '1';
+                -- -------------------------------------
+                -- -------------  Current Time:  14ns
+                WAIT FOR 6 ns;
+                E <= '1';
+                -- -------------------------------------
+                -- -------------  Current Time:  16ns
+                WAIT FOR 2 ns;
+                C <= '1';
+                -- -------------------------------------
+                -- -------------  Current Time:  18ns
+                WAIT FOR 2 ns;
+                A <= '1';
+                -- -------------------------------------
+                -- -------------  Current Time:  22ns
+                WAIT FOR 4 ns;
+                D <= '0';
+                -- -------------------------------------
+                -- -------------  Current Time:  24ns
+                WAIT FOR 2 ns;
+                F <= '0';
+                -- -------------------------------------
+                -- -------------  Current Time:  26ns
+                WAIT FOR 2 ns;
+                C <= '0';
+                E <= '0';
+                -- -------------------------------------
+                -- -------------  Current Time:  32ns
+                WAIT FOR 6 ns;
+                F <= '1';
+                -- -------------------------------------
+                -- -------------  Current Time:  34ns
+                WAIT FOR 2 ns;
+                A <= '0';
+                -- -------------------------------------
+                -- -------------  Current Time:  38ns
+                WAIT FOR 4 ns;
+                C <= '1';
+                D <= '1';
+                -- -------------------------------------
+                WAIT FOR 62 ns;
+
+                STD.TEXTIO.write(TX_OUT, string'("Total[]"));
+                STD.TEXTIO.writeline(RESULTS, TX_OUT);
+                ASSERT (FALSE) REPORT
+                    "Success! Simulation for annotation completed"
+                    SEVERITY FAILURE;
+            END PROCESS;
+
+    END testbench_arch;
+

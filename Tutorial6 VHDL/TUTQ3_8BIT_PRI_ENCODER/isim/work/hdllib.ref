@@ -1,0 +1,4 @@
+EN eight_bit_pri_encoder NULL "E:/Programs/VHDL/Tutorial6 VHDL/TUTQ3_8BIT_PRI_ENCODER/EIGHT_BIT_PRI_ENCODER.vhd" sub00/vhpl00 1397154193
+EN eight_bit_pri_encoder_tbw NULL "E:/Programs/VHDL/Tutorial6 VHDL/TUTQ3_8BIT_PRI_ENCODER/EIGHT_BIT_PRI_ENCODER_TBW.ant" sub00/vhpl02 1397154207
+AR eight_bit_pri_encoder behavioral "E:/Programs/VHDL/Tutorial6 VHDL/TUTQ3_8BIT_PRI_ENCODER/EIGHT_BIT_PRI_ENCODER.vhd" sub00/vhpl01 1397154194
+AR eight_bit_pri_encoder_tbw testbench_arch "E:/Programs/VHDL/Tutorial6 VHDL/TUTQ3_8BIT_PRI_ENCODER/EIGHT_BIT_PRI_ENCODER_TBW.ant" sub00/vhpl03 1397154208

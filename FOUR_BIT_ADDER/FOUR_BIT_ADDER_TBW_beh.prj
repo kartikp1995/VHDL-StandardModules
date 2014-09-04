@@ -1,0 +1,2 @@
+vhdl work "FOUR_BIT_ADDER.vhd"
+vhdl work "FOUR_BIT_ADDER_TBW.vhw"

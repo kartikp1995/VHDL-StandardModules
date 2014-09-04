@@ -1,0 +1,31 @@
+ command line:
+   E:\Programs\VHDL\FULL_ADDER_SEQ\FULL_ADDER_SEQ_TBW_tbxr.exe
+     -intstyle  ise
+     -tclbatch  genExpectedResults.cmd
+
+Sun Mar 23 01:26:49 2014
+
+Total Line Count = 749
+
+ Elaboration time 0 sec.
+
+ Estimate current memory usage 60.416 Meg. 
+
+ Total signals 10
+ Total nets 10
+ Total signal drivers 6
+ Total blocks 7
+ Total primitive blocks 1
+ Total processes 4
+isim batch on 
+run all 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+quit 
+
+ Simulation time 0.03125 sec.
+
+ Estimate current memory usage 68.6285 Meg. 
+
+Sun Mar 23 01:26:49 2014
+

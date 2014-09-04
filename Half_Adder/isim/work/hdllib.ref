@@ -1,0 +1,4 @@
+AR half_adder_src behavioral E:/Programs/VHDL/Half_Adder/Half_Adder_Src.vhd sub00/vhpl01 1394226361
+AR half_adder_tbw testbench_arch E:/Programs/VHDL/Half_Adder/Half_Adder_tbw.ant sub00/vhpl03 1394226702
+EN half_adder_src NULL E:/Programs/VHDL/Half_Adder/Half_Adder_Src.vhd sub00/vhpl00 1394226360
+EN half_adder_tbw NULL E:/Programs/VHDL/Half_Adder/Half_Adder_tbw.ant sub00/vhpl02 1394226701

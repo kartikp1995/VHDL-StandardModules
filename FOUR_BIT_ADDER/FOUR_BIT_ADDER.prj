@@ -1,0 +1,2 @@
+vhdl work "../Full_Adder/FULL_ADDER_SRC.vhd"
+vhdl work "FOUR_BIT_ADDER.vhd"

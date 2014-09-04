@@ -1,0 +1,39 @@
+ command line:
+   ./FOUR_BIT_COMB_ADDSUB_TBW_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  49199
+
+Thu Apr 10 23:39:49 2014
+
+Total Line Count = 927
+
+ Elaboration time 0.015625 sec.
+
+ Estimate current memory usage 89.5345 Meg. 
+
+ Total signals 36
+ Total nets 24
+ Total signal drivers 21
+ Total blocks 7
+ Total primitive blocks 1
+ Total processes 13
+ntrace select -o on -n /FOUR_BIT_COMB_ADDSUB_TBW/a0 
+ntrace select -o on -n /FOUR_BIT_COMB_ADDSUB_TBW/a1 
+ntrace select -o on -n /FOUR_BIT_COMB_ADDSUB_TBW/a2 
+ntrace select -o on -n /FOUR_BIT_COMB_ADDSUB_TBW/a3 
+ntrace select -o on -n /FOUR_BIT_COMB_ADDSUB_TBW/b0 
+ntrace select -o on -n /FOUR_BIT_COMB_ADDSUB_TBW/b1 
+ntrace select -o on -n /FOUR_BIT_COMB_ADDSUB_TBW/b2 
+ntrace select -o on -n /FOUR_BIT_COMB_ADDSUB_TBW/b3 
+ntrace select -o on -n /FOUR_BIT_COMB_ADDSUB_TBW/m 
+ntrace select -o on -n /FOUR_BIT_COMB_ADDSUB_TBW/cout 
+ntrace select -o on -n /FOUR_BIT_COMB_ADDSUB_TBW/sum0 
+ntrace select -o on -n /FOUR_BIT_COMB_ADDSUB_TBW/sum2 
+ntrace select -o on -n /FOUR_BIT_COMB_ADDSUB_TBW/sum1 
+ntrace select -o on -n /FOUR_BIT_COMB_ADDSUB_TBW/sum3 
+ntrace select -o on -n /FOUR_BIT_COMB_ADDSUB_TBW/overflow 
+ntrace start 
+run all 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.

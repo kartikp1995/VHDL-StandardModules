@@ -1,0 +1,6 @@
+AR full_adder full_adder_behave E:/Programs/VHDL/FOUR_BIT_ADDER/FOUR_BIT_ADDER.vhd sub00/vhpl01 1393961726
+EN full_adder_src NULL E:/Programs/VHDL/Full_Adder/FULL_ADDER_SRC.vhd sub00/vhpl04 1394977667
+EN full_adder NULL E:/Programs/VHDL/FOUR_BIT_ADDER/FOUR_BIT_ADDER.vhd sub00/vhpl00 1393961725
+AR four_bit_adder four_bit_adder_structure E:/Programs/VHDL/FOUR_BIT_ADDER/FOUR_BIT_ADDER.vhd sub00/vhpl03 1394977670
+AR full_adder_src behavioral E:/Programs/VHDL/Full_Adder/FULL_ADDER_SRC.vhd sub00/vhpl05 1394977668
+EN four_bit_adder NULL E:/Programs/VHDL/FOUR_BIT_ADDER/FOUR_BIT_ADDER.vhd sub00/vhpl02 1394977669

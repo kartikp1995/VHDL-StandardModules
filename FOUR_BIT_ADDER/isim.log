@@ -1,0 +1,25 @@
+ command line:
+   ./FOUR_BIT_ADDER_TBW_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  49593
+
+Wed Mar 05 01:06:13 2014
+
+Total Line Count = 828
+
+ Elaboration time 0.015625 sec.
+
+ Estimate current memory usage 63.574 Meg. 
+
+ Total signals 33
+ Total nets 20
+ Total signal drivers 12
+ Total blocks 11
+ Total primitive blocks 4
+ Total processes 12
+ntrace select -o on -m / -l this 
+ntrace start 
+run all 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.

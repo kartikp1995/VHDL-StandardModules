@@ -1,0 +1,4 @@
+EN four_bit_comb_addsub NULL "E:/Programs/VHDL/Tutorial6 VHDL/TUT2_FOUR_BIT_COMB_ADDSUB/FOUR_BIT_COMB_ADDSUB.vhd" sub00/vhpl00 1397153266
+AR four_bit_comb_addsub_tbw testbench_arch "E:/Programs/VHDL/Tutorial6 VHDL/TUT2_FOUR_BIT_COMB_ADDSUB/FOUR_BIT_COMB_ADDSUB_TBW.vhw" sub00/vhpl03 1397153355
+AR four_bit_comb_addsub behavioral "E:/Programs/VHDL/Tutorial6 VHDL/TUT2_FOUR_BIT_COMB_ADDSUB/FOUR_BIT_COMB_ADDSUB.vhd" sub00/vhpl01 1397153267
+EN four_bit_comb_addsub_tbw NULL "E:/Programs/VHDL/Tutorial6 VHDL/TUT2_FOUR_BIT_COMB_ADDSUB/FOUR_BIT_COMB_ADDSUB_TBW.vhw" sub00/vhpl02 1397153354

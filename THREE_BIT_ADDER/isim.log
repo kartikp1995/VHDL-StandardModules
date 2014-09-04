@@ -1,0 +1,31 @@
+ command line:
+   E:\Programs\VHDL\THREE_BIT_ADDER\THREE_BIT_ADDER_TBW_tbxr.exe
+     -intstyle  ise
+     -tclbatch  genExpectedResults.cmd
+
+Sat Mar 08 03:10:21 2014
+
+Total Line Count = 833
+
+ Elaboration time 0.015625 sec.
+
+ Estimate current memory usage 60.3218 Meg. 
+
+ Total signals 28
+ Total nets 16
+ Total signal drivers 12
+ Total blocks 10
+ Total primitive blocks 3
+ Total processes 11
+isim batch on 
+run all 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+quit 
+
+ Simulation time 0.0625 sec.
+
+ Estimate current memory usage 68.5343 Meg. 
+
+Sat Mar 08 03:10:21 2014
+

@@ -1,0 +1,14 @@
+xst -ise "E:/Programs/VHDL/FOUR_BIT_ADDER/FOUR_BIT_ADDER.ise" -intstyle ise -ifn FOUR_BIT_ADDER.xst -ofn FOUR_BIT_ADDER.syr
+ngdbuild -ise "E:/Programs/VHDL/FOUR_BIT_ADDER/FOUR_BIT_ADDER.ise" -intstyle ise -dd _ngo -i -p acr2 "FOUR_BIT_ADDER.ngc" FOUR_BIT_ADDER.ngd
+cpldfit -ise "E:/Programs/VHDL/FOUR_BIT_ADDER/FOUR_BIT_ADDER.ise" -intstyle ise -p xa2c*-*-* -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 32 -inreg on -blkfanin 38 -pterms 28 -unused keeper -terminate keeper -iostd LVCMOS18 FOUR_BIT_ADDER.ngd
+XSLTProcess -ise "E:/Programs/VHDL/FOUR_BIT_ADDER/FOUR_BIT_ADDER.ise" FOUR_BIT_ADDER_build.xml
+tsim -ise "E:/Programs/VHDL/FOUR_BIT_ADDER/FOUR_BIT_ADDER.ise" -intstyle ise FOUR_BIT_ADDER FOUR_BIT_ADDER.nga
+taengine -ise "E:/Programs/VHDL/FOUR_BIT_ADDER/FOUR_BIT_ADDER.ise" -intstyle ise -f FOUR_BIT_ADDER -w --format html1 -l E:/Programs/VHDL/FOUR_BIT_ADDER/FOUR_BIT_ADDER_html/tim/timing_report.htm
+hprep6 -ise "E:/Programs/VHDL/FOUR_BIT_ADDER/FOUR_BIT_ADDER.ise" -s IEEE1149 -i FOUR_BIT_ADDER
+xst -ise "E:/Programs/VHDL/FOUR_BIT_ADDER/FOUR_BIT_ADDER.ise" -intstyle ise -ifn FOUR_BIT_ADDER.xst -ofn FOUR_BIT_ADDER.syr
+xst -ise "E:/Programs/VHDL/FOUR_BIT_ADDER/FOUR_BIT_ADDER.ise" -intstyle ise -ifn FOUR_BIT_ADDER.xst -ofn FOUR_BIT_ADDER.syr
+xst -ise "E:/Programs/VHDL/FOUR_BIT_ADDER/FOUR_BIT_ADDER.ise" -intstyle ise -ifn FOUR_BIT_ADDER.xst -ofn FOUR_BIT_ADDER.syr
+xst -ise "E:/Programs/VHDL/FOUR_BIT_ADDER/FOUR_BIT_ADDER.ise" -intstyle ise -ifn FOUR_BIT_ADDER.xst -ofn FOUR_BIT_ADDER.syr
+xst -ise "E:/Programs/VHDL/FOUR_BIT_ADDER/FOUR_BIT_ADDER.ise" -intstyle ise -ifn FOUR_BIT_ADDER.xst -ofn FOUR_BIT_ADDER.syr
+xst -ise "E:/Programs/VHDL/FOUR_BIT_ADDER/FOUR_BIT_ADDER.ise" -intstyle ise -ifn FOUR_BIT_ADDER.xst -ofn FOUR_BIT_ADDER.syr
+xst -ise "E:/Programs/VHDL/FOUR_BIT_ADDER/FOUR_BIT_ADDER.ise" -intstyle ise -ifn FOUR_BIT_ADDER.xst -ofn FOUR_BIT_ADDER.syr

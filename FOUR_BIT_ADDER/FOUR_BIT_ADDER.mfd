@@ -1,0 +1,107 @@
+MDF Database:  version 1.0
+MDF_INFO | FOUR_BIT_ADDER | XA2C32A-6-VQ44
+MACROCELL | 0 | 4 | cout_MC
+ATTRIBUTES | 1610875650 | 0
+OUTPUTMC | 1 | 0 | 2
+INPUTS | 3 | b<3>  | a<3>  | c<3>
+INPUTMC | 1 | 0 | 13
+INPUTP | 2 | 32 | 39
+EQ | 3 | 
+   !cout = !b<3> & !a<3>
+	# b<3> & !a<3> & c<3>
+	# !b<3> & a<3> & c<3>;	// (3 pt, 3 inp)
+
+MACROCELL | 0 | 13 | c<3>_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 3 | 0 | 4 | 0 | 3 | 0 | 2
+INPUTS | 3 | b<2>  | a<2>  | N_PZ_30
+INPUTMC | 1 | 0 | 14
+INPUTP | 2 | 33 | 40
+EQ | 3 | 
+   c<3> = !b<2> & !a<2>
+	# b<2> & !a<2> & N_PZ_30
+	# !b<2> & a<2> & N_PZ_30;	// (3 pt, 3 inp)
+
+MACROCELL | 0 | 14 | N_PZ_30_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 3 | 0 | 13 | 0 | 0 | 0 | 1
+INPUTS | 3 | b<1>  | a<1>  | N_PZ_21
+INPUTMC | 1 | 0 | 15
+INPUTP | 2 | 34 | 41
+EQ | 3 | 
+   N_PZ_30 = !b<1> & !a<1>
+	# !b<1> & !N_PZ_21
+	# !a<1> & !N_PZ_21;	// (3 pt, 3 inp)
+
+MACROCELL | 0 | 15 | N_PZ_21_MC
+ATTRIBUTES | 536871680 | 0
+OUTPUTMC | 2 | 0 | 14 | 0 | 0
+INPUTS | 3 | b<0>  | a<0>  | cin
+INPUTP | 3 | 38 | 42 | 31
+EQ | 3 | 
+   N_PZ_21 = b<0> & a<0>
+	# b<0> & !a<0> & cin
+	# !b<0> & a<0> & cin;	// (3 pt, 3 inp)
+
+MACROCELL | 0 | 5 | sum<0>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 3 | b<0>  | a<0>  | cin
+INPUTP | 3 | 38 | 42 | 31
+EQ | 3 | 
+   sum<0> = b<0>
+	$ a<0> & !cin
+	# !a<0> & cin;	// (3 pt, 3 inp)
+
+MACROCELL | 0 | 0 | sum<1>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 4 | N_PZ_30  | b<1>  | a<1>  | N_PZ_21
+INPUTMC | 2 | 0 | 14 | 0 | 15
+INPUTP | 2 | 34 | 41
+EQ | 3 | 
+   sum<1> = N_PZ_30
+	$ N_PZ_30 & !b<1> & !a<1> & !N_PZ_21
+	# !N_PZ_30 & b<1> & a<1> & N_PZ_21;	// (3 pt, 4 inp)
+
+MACROCELL | 0 | 1 | sum<2>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 3 | b<2>  | a<2>  | N_PZ_30
+INPUTMC | 1 | 0 | 14
+INPUTP | 2 | 33 | 40
+EQ | 3 | 
+   sum<2> = b<2>
+	$ a<2> & N_PZ_30
+	# !a<2> & !N_PZ_30;	// (3 pt, 3 inp)
+
+MACROCELL | 0 | 3 | sum<3>_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 3 | b<3>  | a<3>  | c<3>
+INPUTMC | 1 | 0 | 13
+INPUTP | 2 | 32 | 39
+EQ | 3 | 
+   sum<3> = b<3>
+	$ a<3> & c<3>
+	# !a<3> & !c<3>;	// (3 pt, 3 inp)
+
+MACROCELL | 0 | 2 | v_MC
+ATTRIBUTES | 1074004738 | 0
+INPUTS | 2 | c<3>  | cout
+INPUTMC | 2 | 0 | 13 | 0 | 4
+EQ | 2 | 
+   v = c<3> & cout
+	# !c<3> & !cout;	// (2 pt, 2 inp)
+
+PIN | a<0> | 64 | 16 | LVCMOS18 | 42 | 2 | 0 | 15 | 0 | 5
+PIN | a<1> | 64 | 16 | LVCMOS18 | 41 | 2 | 0 | 14 | 0 | 0
+PIN | a<2> | 64 | 16 | LVCMOS18 | 40 | 2 | 0 | 13 | 0 | 1
+PIN | a<3> | 64 | 16 | LVCMOS18 | 39 | 2 | 0 | 4 | 0 | 3
+PIN | b<0> | 64 | 16 | LVCMOS18 | 38 | 2 | 0 | 15 | 0 | 5
+PIN | b<1> | 64 | 16 | LVCMOS18 | 34 | 2 | 0 | 14 | 0 | 0
+PIN | b<2> | 64 | 16 | LVCMOS18 | 33 | 2 | 0 | 13 | 0 | 1
+PIN | b<3> | 64 | 16 | LVCMOS18 | 32 | 2 | 0 | 4 | 0 | 3
+PIN | cin | 64 | 16 | LVCMOS18 | 31 | 2 | 0 | 15 | 0 | 5
+PIN | cout | 536871040 | 0 | LVCMOS18 | 44
+PIN | sum<0> | 536871040 | 0 | LVCMOS18 | 43
+PIN | sum<1> | 536871040 | 0 | LVCMOS18 | 5
+PIN | sum<2> | 536871040 | 0 | LVCMOS18 | 4
+PIN | sum<3> | 536871040 | 0 | LVCMOS18 | 1
+PIN | v | 536871040 | 0 | LVCMOS18 | 3

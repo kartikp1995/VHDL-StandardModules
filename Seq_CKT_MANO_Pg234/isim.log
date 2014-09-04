@@ -1,0 +1,31 @@
+ command line:
+   E:\Programs\VHDL\Seq_CKT_MANO_Pg234\TBW_tbxr.exe
+     -intstyle  ise
+     -tclbatch  genExpectedResults.cmd
+
+Sun Mar 23 00:05:02 2014
+
+Total Line Count = 759
+
+ Elaboration time 0.015625 sec.
+
+ Estimate current memory usage 60.416 Meg. 
+
+ Total signals 6
+ Total nets 3
+ Total signal drivers 3
+ Total blocks 7
+ Total primitive blocks 1
+ Total processes 4
+isim batch on 
+run all 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+quit 
+
+ Simulation time 0.0625 sec.
+
+ Estimate current memory usage 68.6285 Meg. 
+
+Sun Mar 23 00:05:02 2014
+

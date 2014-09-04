@@ -1,0 +1,30 @@
+Release 8.2i - xst I.31
+Copyright (c) 1995-2006 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.00 / 0.28 s | Elapsed : 0.00 / 0.00 s
+ 
+--> 
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "E:/Programs/VHDL/Full_Adder/FULL_ADDER_SRC.vhd" in Library work.
+Entity <FULL_ADDER> compiled.
+ERROR:HDLParsers:3010 - "E:/Programs/VHDL/Full_Adder/FULL_ADDER_SRC.vhd" Line 35. Entity FULL_ADDER_SRC does not exist.
+ERROR:HDLParsers:3312 - "E:/Programs/VHDL/Full_Adder/FULL_ADDER_SRC.vhd" Line 38. Undefined symbol 's'.
+ERROR:HDLParsers:3312 - "E:/Programs/VHDL/Full_Adder/FULL_ADDER_SRC.vhd" Line 38. Undefined symbol 'x'.
+ERROR:HDLParsers:1209 - "E:/Programs/VHDL/Full_Adder/FULL_ADDER_SRC.vhd" Line 38. x: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "E:/Programs/VHDL/Full_Adder/FULL_ADDER_SRC.vhd" Line 38. Undefined symbol 'y'.
+ERROR:HDLParsers:1209 - "E:/Programs/VHDL/Full_Adder/FULL_ADDER_SRC.vhd" Line 38. y: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3313 - "E:/Programs/VHDL/Full_Adder/FULL_ADDER_SRC.vhd" Line 38. Undefined symbol 'cin'.  Should it be: in, min or can?
+ERROR:HDLParsers:1209 - "E:/Programs/VHDL/Full_Adder/FULL_ADDER_SRC.vhd" Line 38. cin: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3313 - "E:/Programs/VHDL/Full_Adder/FULL_ADDER_SRC.vhd" Line 39. Undefined symbol 'cout'.  Should it be: out?
+CPU : 0.27 / 0.55 s | Elapsed : 0.00 / 0.00 s
+ 
+--> 
+
+Total memory usage is 130748 kilobytes
+
+Number of errors   :    9 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

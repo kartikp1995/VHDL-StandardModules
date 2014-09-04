@@ -1,0 +1,7 @@
+V3 3
+FL E:/Programs/VHDL/Seq_CKT_MANO_Pg234/SOURCE.vhd 2014/03/23.00:01:58 I.31
+EN isim_temp/SOURCE 1395513120     FL E:/Programs/VHDL/Seq_CKT_MANO_Pg234/SOURCE.vhd \
+      PB ieee/std_logic_1164 1147840849 PB ieee/std_logic_arith 1147840851 \
+      PB ieee/STD_LOGIC_UNSIGNED 1147840857
+AR isim_temp/SOURCE/Behavioral 1395513121 FL E:/Programs/VHDL/Seq_CKT_MANO_Pg234/SOURCE.vhd \
+      EN isim_temp/SOURCE 1395513120

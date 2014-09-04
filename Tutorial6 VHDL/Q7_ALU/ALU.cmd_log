@@ -1,0 +1,3 @@
+xst -ise "E:/Programs/VHDL/Tutorial6 VHDL/Q7_ALU/Q7_ALU.ise" -intstyle ise -ifn ALU.xst -ofn ALU.syr
+xst -ise "E:/Programs/VHDL/Tutorial6 VHDL/Q7_ALU/Q7_ALU.ise" -intstyle ise -ifn ALU.xst -ofn ALU.syr
+xst -ise "E:/Programs/VHDL/Tutorial6 VHDL/Q7_ALU/Q7_ALU.ise" -intstyle ise -ifn ALU.xst -ofn ALU.syr

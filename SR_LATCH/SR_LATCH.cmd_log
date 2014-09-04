@@ -1,0 +1,5 @@
+xst -ise "E:/Programs/VHDL/SR_LATCH/SR_LATCH.ise" -intstyle ise -ifn SR_LATCH.xst -ofn SR_LATCH.syr
+xst -ise "E:/Programs/VHDL/SR_LATCH/SR_LATCH.ise" -intstyle ise -ifn SR_LATCH.xst -ofn SR_LATCH.syr
+xst -ise "E:/Programs/VHDL/SR_LATCH/SR_LATCH.ise" -intstyle ise -ifn SR_LATCH.xst -ofn SR_LATCH.syr
+xst -ise "E:/Programs/VHDL/SR_LATCH/SR_LATCH.ise" -intstyle ise -ifn SR_LATCH.xst -ofn SR_LATCH.syr
+xst -ise "E:/Programs/VHDL/SR_LATCH/SR_LATCH.ise" -intstyle ise -ifn SR_LATCH.xst -ofn SR_LATCH.syr

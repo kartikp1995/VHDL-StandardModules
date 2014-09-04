@@ -1,0 +1,14 @@
+AUTO_TS_P2P:FROM:EN_L:TO:output:1
+AUTO_TS_F2P:FROM:output_MC.Q:TO:output:1
+AUTO_TS_P2F:FROM:SEL<0>:TO:output_MC.D:1
+AUTO_TS_P2F:FROM:SEL<1>:TO:output_MC.D:1
+AUTO_TS_P2F:FROM:SEL<2>:TO:output_MC.D:1
+AUTO_TS_P2F:FROM:input<7>:TO:output_MC.D:1
+AUTO_TS_P2F:FROM:input<3>:TO:output_MC.D:1
+AUTO_TS_P2F:FROM:input<5>:TO:output_MC.D:1
+AUTO_TS_P2F:FROM:input<1>:TO:output_MC.D:1
+AUTO_TS_P2F:FROM:input<6>:TO:output_MC.D:1
+AUTO_TS_P2F:FROM:input<2>:TO:output_MC.D:1
+AUTO_TS_P2F:FROM:input<4>:TO:output_MC.D:1
+AUTO_TS_P2F:FROM:input<0>:TO:output_MC.D:1
+AUTO_TS_P2F:FROM:EN_L:TO:EN_L_II/FCLK:1

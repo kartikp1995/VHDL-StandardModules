@@ -1,0 +1,35 @@
+ command line:
+   ./MUX_8x1_TBW_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  49184
+
+Thu Apr 10 23:08:40 2014
+
+Total Line Count = 790
+
+ Elaboration time 0 sec.
+
+ Estimate current memory usage 89.3215 Meg. 
+
+ Total signals 22
+ Total nets 13
+ Total signal drivers 10
+ Total blocks 7
+ Total primitive blocks 1
+ Total processes 2
+ntrace select -o on -n /MUX_8x1_TBW/input7 
+ntrace select -o on -n /MUX_8x1_TBW/input6 
+ntrace select -o on -n /MUX_8x1_TBW/input5 
+ntrace select -o on -n /MUX_8x1_TBW/input4 
+ntrace select -o on -n /MUX_8x1_TBW/input3 
+ntrace select -o on -n /MUX_8x1_TBW/input2 
+ntrace select -o on -n /MUX_8x1_TBW/input1 
+ntrace select -o on -n /MUX_8x1_TBW/input0 
+ntrace select -o on -n /MUX_8x1_TBW/en_l 
+ntrace select -o on -n /MUX_8x1_TBW/sel 
+ntrace select -o on -n /MUX_8x1_TBW/output 
+ntrace start 
+run all 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.

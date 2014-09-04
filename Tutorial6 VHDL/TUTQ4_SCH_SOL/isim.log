@@ -1,0 +1,31 @@
+ command line:
+   E:\Programs\VHDL\Tutorial6 VHDL\TUTQ4_SCH_SOL\SCH_SOL_TBW_tbxr.exe
+     -intstyle  ise
+     -tclbatch  genExpectedResults.cmd
+
+Thu Apr 10 23:59:52 2014
+
+Total Line Count = 894
+
+ Elaboration time 0 sec.
+
+ Estimate current memory usage 86.8639 Meg. 
+
+ Total signals 28
+ Total nets 14
+ Total signal drivers 14
+ Total blocks 7
+ Total primitive blocks 1
+ Total processes 10
+isim batch on 
+run all 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+quit 
+
+ Simulation time 0.03125 sec.
+
+ Estimate current memory usage 95.0764 Meg. 
+
+Thu Apr 10 23:59:52 2014
+

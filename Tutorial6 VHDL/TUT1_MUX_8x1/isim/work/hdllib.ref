@@ -1,0 +1,4 @@
+AR mux_8x1 behavioral "E:/Programs/VHDL/Tutorial6 VHDL/TUT1_MUX_8x1/MUX_8x1.vhd" sub00/vhpl01 1397151077
+AR mux_8x1_tbw testbench_arch "E:/Programs/VHDL/Tutorial6 VHDL/TUT1_MUX_8x1/MUX_8x1_TBW.vhw" sub00/vhpl03 1397151517
+EN mux_8x1 NULL "E:/Programs/VHDL/Tutorial6 VHDL/TUT1_MUX_8x1/MUX_8x1.vhd" sub00/vhpl00 1397151076
+EN mux_8x1_tbw NULL "E:/Programs/VHDL/Tutorial6 VHDL/TUT1_MUX_8x1/MUX_8x1_TBW.vhw" sub00/vhpl02 1397151516

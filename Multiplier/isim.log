@@ -1,0 +1,31 @@
+ command line:
+   E:\Programs\VHDL\Multiplier\MULTIPLIER_TBW_tbxr.exe
+     -intstyle  ise
+     -tclbatch  genExpectedResults.cmd
+
+Sun Mar 23 01:38:22 2014
+
+Total Line Count = 777
+
+ Elaboration time 0 sec.
+
+ Estimate current memory usage 60.4201 Meg. 
+
+ Total signals 6
+ Total nets 12
+ Total signal drivers 3
+ Total blocks 7
+ Total primitive blocks 1
+ Total processes 3
+isim batch on 
+run all 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+quit 
+
+ Simulation time 0.03125 sec.
+
+ Estimate current memory usage 68.6326 Meg. 
+
+Sun Mar 23 01:38:22 2014
+

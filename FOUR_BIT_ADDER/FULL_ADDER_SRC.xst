@@ -1,0 +1,4 @@
+set -tmpdir "./xst/projnav.tmp"
+elaborate
+-ifn FULL_ADDER_SRC.prj
+-ifmt mixed

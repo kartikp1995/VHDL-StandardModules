@@ -1,0 +1,1 @@
+xst -ise "E:/Programs/VHDL/ONE_BIT_COMP/ONE_BIT_COMP.ise" -intstyle ise -ifn ONE_BIT_COMP.xst -ofn ONE_BIT_COMP.syr

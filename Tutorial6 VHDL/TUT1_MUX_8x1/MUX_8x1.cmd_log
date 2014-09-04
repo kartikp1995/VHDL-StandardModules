@@ -1,0 +1,5 @@
+xst -ise "E:/Programs/VHDL/Tutorial6 VHDL/TUT1_MUX_8x1/TUT1_MUX_8x1.ise" -intstyle ise -ifn MUX_8x1.xst -ofn MUX_8x1.syr
+xst -ise "E:/Programs/VHDL/Tutorial6 VHDL/TUT1_MUX_8x1/TUT1_MUX_8x1.ise" -intstyle ise -ifn MUX_8x1.xst -ofn MUX_8x1.syr
+xst -ise "E:/Programs/VHDL/Tutorial6 VHDL/TUT1_MUX_8x1/TUT1_MUX_8x1.ise" -intstyle ise -ifn MUX_8x1.xst -ofn MUX_8x1.syr
+xst -ise "E:/Programs/VHDL/Tutorial6 VHDL/TUT1_MUX_8x1/TUT1_MUX_8x1.ise" -intstyle ise -ifn MUX_8x1.xst -ofn MUX_8x1.syr
+xst -ise "E:/Programs/VHDL/Tutorial6 VHDL/TUT1_MUX_8x1/TUT1_MUX_8x1.ise" -intstyle ise -ifn MUX_8x1.xst -ofn MUX_8x1.syr

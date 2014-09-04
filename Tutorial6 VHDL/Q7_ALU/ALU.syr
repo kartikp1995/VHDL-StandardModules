@@ -1,0 +1,246 @@
+Release 8.2i - xst I.31
+Copyright (c) 1995-2006 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.00 / 0.28 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.28 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Reading design: ALU.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "ALU.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "ALU"
+Output Format                      : NGC
+Target Device                      : Automotive CoolRunner2
+
+---- Source Options
+Top Module Name                    : ALU
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+
+---- Target Options
+Add IO Buffers                     : YES
+MACRO Preserve                     : YES
+XOR Preserve                       : YES
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : YES
+RTL Output                         : Yes
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+
+---- Other Options
+lso                                : ALU.lso
+verilog2001                        : YES
+safe_implementation                : No
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "E:/Programs/VHDL/Tutorial6 VHDL/Q7_ALU/ALU.vhd" in Library work.
+Entity <alu> compiled.
+Entity <alu> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <ALU> in library <work> (architecture <behavioral>).
+
+Building hierarchy successfully finished.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <ALU> in library <work> (Architecture <behavioral>).
+Entity <ALU> analyzed. Unit <ALU> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <ALU>.
+    Related source file is "E:/Programs/VHDL/Tutorial6 VHDL/Q7_ALU/ALU.vhd".
+WARNING:Xst:737 - Found 1-bit latch for signal <F0>.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <F1>.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <F2>.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <F3>.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <COUT>.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <c0>.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <c1>.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <c2>.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <c3>.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <OVR>.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 1-bit xor2 for signal <$xor0021>.
+    Found 1-bit xor2 for signal <$xor0022>.
+    Found 1-bit xor2 for signal <$xor0023>.
+    Found 1-bit xor2 for signal <$xor0024> created at line 106.
+    Found 1-bit xor2 for signal <$xor0025> created at line 124.
+    Found 1-bit xor2 for signal <$xor0026> created at line 142.
+    Found 1-bit xor2 for signal <$xor0027> created at line 147.
+    Found 1-bit xor2 for signal <$xor0032>.
+    Found 1-bit xor2 for signal <$xor0033>.
+    Found 1-bit xor2 for signal <$xor0034>.
+    Found 1-bit xor2 for signal <$xor0035>.
+    Found 1-bit xor2 for signal <$xor0036> created at line 108.
+    Found 1-bit xor2 for signal <$xor0037> created at line 126.
+    Found 1-bit xor2 for signal <$xor0038> created at line 143.
+    Found 1-bit xor2 for signal <$xor0044>.
+    Found 1-bit xor2 for signal <$xor0045>.
+    Found 1-bit xor2 for signal <$xor0046>.
+    Found 1-bit xor2 for signal <$xor0047>.
+    Found 1-bit xor2 for signal <$xor0048> created at line 110.
+    Found 1-bit xor2 for signal <$xor0049> created at line 128.
+    Found 1-bit xor2 for signal <$xor0050> created at line 144.
+    Found 1-bit xor2 for signal <$xor0056>.
+    Found 1-bit xor2 for signal <$xor0057>.
+    Found 1-bit xor2 for signal <$xor0058>.
+    Found 1-bit xor2 for signal <$xor0059>.
+    Found 1-bit xor2 for signal <$xor0060> created at line 112.
+    Found 1-bit xor2 for signal <$xor0061> created at line 130.
+    Found 1-bit xor2 for signal <$xor0062> created at line 145.
+    Found 1-bit xor2 for signal <$xor0088> created at line 36.
+    Found 1-bit xor2 for signal <$xor0089> created at line 74.
+    Summary:
+	inferred  30 Xor(s).
+Unit <ALU> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Latches                                              : 10
+ 1-bit latch                                           : 10
+# Xors                                                 : 30
+ 1-bit xor2                                            : 30
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Latches                                              : 10
+ 1-bit latch                                           : 10
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <ALU> ...
+WARNING:Xst:1294 - Latch <F3> is equivalent to a wire in block <ALU>.
+WARNING:Xst:1294 - Latch <F2> is equivalent to a wire in block <ALU>.
+WARNING:Xst:1294 - Latch <F1> is equivalent to a wire in block <ALU>.
+WARNING:Xst:1294 - Latch <F0> is equivalent to a wire in block <ALU>.
+WARNING:Xst:1294 - Latch <F3> is equivalent to a wire in block <ALU>.
+WARNING:Xst:1294 - Latch <F2> is equivalent to a wire in block <ALU>.
+WARNING:Xst:1294 - Latch <F1> is equivalent to a wire in block <ALU>.
+WARNING:Xst:1294 - Latch <F0> is equivalent to a wire in block <ALU>.
+
+=========================================================================
+*                          Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : ALU.ngr
+Top Level Output File Name         : ALU
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : YES
+Target Technology                  : Automotive CoolRunner2
+Macro Preserve                     : YES
+XOR Preserve                       : YES
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+Design Statistics
+# IOs                              : 19
+
+Cell Usage :
+# BELS                             : 460
+#      AND2                        : 155
+#      AND3                        : 20
+#      AND4                        : 4
+#      INV                         : 163
+#      OR2                         : 62
+#      OR3                         : 24
+#      OR4                         : 1
+#      XOR2                        : 31
+# FlipFlops/Latches                : 6
+#      LD                          : 6
+# IO Buffers                       : 19
+#      IBUF                        : 13
+#      OBUF                        : 6
+=========================================================================
+CPU : 6.78 / 7.06 s | Elapsed : 7.00 / 7.00 s
+ 
+--> 
+
+Total memory usage is 143236 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   18 (   0 filtered)
+Number of infos    :   10 (   0 filtered)
+

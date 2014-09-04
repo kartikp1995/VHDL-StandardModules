@@ -1,0 +1,4 @@
+EN garrage_door_tbw NULL E:/Programs/VHDL/Garrage_Door/GARRAGE_DOOR_TBW.ant sub00/vhpl02 1395377026
+AR garrage_door behavioral E:/Programs/VHDL/Garrage_Door/GARRAGE_DOOR.vhd sub00/vhpl01 1395377025
+AR garrage_door_tbw testbench_arch E:/Programs/VHDL/Garrage_Door/GARRAGE_DOOR_TBW.ant sub00/vhpl03 1395377027
+EN garrage_door NULL E:/Programs/VHDL/Garrage_Door/GARRAGE_DOOR.vhd sub00/vhpl00 1395377024
