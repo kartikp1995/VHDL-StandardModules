@@ -13,6 +13,8 @@ This repository contains VHDL implementations of following:
 * One Bit Comparator
 * SR Latch
 * Three Bit Adder
+
+Inside `Tutorial VHDL` Folder:
 * 8x1 MUX
 * Four Bit Combinational Adder and Subtractor
 * 8-bit Priority Enoder
