@@ -1,1 +1,0 @@
-xst -ise "E:/Programs/VHDL/Garrage_Door/Garrage_Door.ise" -intstyle ise -ifn GARRAGE_DOOR.xst -ofn GARRAGE_DOOR.syr
