@@ -1,6 +1,0 @@
-AR four_bit_adder_tbw testbench_arch E:/Programs/VHDL/FOUR_BIT_ADDER/FOUR_BIT_ADDER_TBW.vhw sub00/vhpl05 1393961767
-AR full_adder full_adder_behave E:/Programs/VHDL/FOUR_BIT_ADDER/FOUR_BIT_ADDER.vhd sub00/vhpl01 1393961683
-EN four_bit_adder_tbw NULL E:/Programs/VHDL/FOUR_BIT_ADDER/FOUR_BIT_ADDER_TBW.vhw sub00/vhpl04 1393961766
-EN full_adder NULL E:/Programs/VHDL/FOUR_BIT_ADDER/FOUR_BIT_ADDER.vhd sub00/vhpl00 1393961682
-AR four_bit_adder four_bit_adder_structure E:/Programs/VHDL/FOUR_BIT_ADDER/FOUR_BIT_ADDER.vhd sub00/vhpl03 1393961685
-EN four_bit_adder NULL E:/Programs/VHDL/FOUR_BIT_ADDER/FOUR_BIT_ADDER.vhd sub00/vhpl02 1393961684
