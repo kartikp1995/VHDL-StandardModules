@@ -1,1 +1,0 @@
-xst -ise "E:/Programs/VHDL/Tutorial6 VHDL/TUTQ5_FOUR_BIT_COMP/TUTQ5_FOUR_BIT_COMP.ise" -intstyle ise -ifn FOUR_BIT_COMP.xst -ofn FOUR_BIT_COMP.syr
