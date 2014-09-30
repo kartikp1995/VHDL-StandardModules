@@ -1,1 +1,0 @@
-xst -ise "E:/Programs/VHDL/Full_Adder/Full_Adder.ise" -intstyle ise -ifn FULL_ADDER_SRC.xst -ofn FULL_ADDER_SRC.syr

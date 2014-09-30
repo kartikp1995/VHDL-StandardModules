@@ -1,6 +1,0 @@
-EN full_adder_tbw NULL E:/Programs/VHDL/Full_Adder/FULL_ADDER_TBW.ant sub00/vhpl04 1394227322
-EN full_adder_src NULL E:/Programs/VHDL/Full_Adder/FULL_ADDER_SRC.vhd sub00/vhpl02 1394227320
-AR full_adder behavioral E:/Programs/VHDL/Full_Adder/FULL_ADDER_SRC.vhd sub00/vhpl01 1394227172
-EN full_adder NULL E:/Programs/VHDL/Full_Adder/FULL_ADDER_SRC.vhd sub00/vhpl00 1394227171
-AR full_adder_src behavioral E:/Programs/VHDL/Full_Adder/FULL_ADDER_SRC.vhd sub00/vhpl03 1394227321
-AR full_adder_tbw testbench_arch E:/Programs/VHDL/Full_Adder/FULL_ADDER_TBW.ant sub00/vhpl05 1394227323
