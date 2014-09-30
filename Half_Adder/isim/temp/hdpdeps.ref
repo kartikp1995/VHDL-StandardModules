@@ -1,8 +1,0 @@
-V3 3
-FL E:/Programs/VHDL/Half_Adder/Half_Adder_Src.vhd 2014/03/08.02:34:16 I.31
-EN isim_temp/Half_Adder_Src 1394226356 FL E:/Programs/VHDL/Half_Adder/Half_Adder_Src.vhd \
-      PB ieee/std_logic_1164 1147840849 PB ieee/std_logic_arith 1147840851 \
-      PB ieee/STD_LOGIC_UNSIGNED 1147840857
-AR isim_temp/Half_Adder_Src/Behavioral 1394226357 \
-      FL E:/Programs/VHDL/Half_Adder/Half_Adder_Src.vhd \
-      EN isim_temp/Half_Adder_Src 1394226356

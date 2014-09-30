@@ -1,1 +1,0 @@
-xst -ise "E:/Programs/VHDL/Half_Adder/Half_Adder.ise" -intstyle ise -ifn Half_Adder_Src.xst -ofn Half_Adder_Src.syr
