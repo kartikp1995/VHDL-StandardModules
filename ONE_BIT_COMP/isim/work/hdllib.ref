@@ -1,4 +1,0 @@
-AR one_bit_comp behavioral E:/Programs/VHDL/ONE_BIT_COMP/ONE_BIT_COMP.vhd sub00/vhpl01 1394971821
-EN one_bit_comp_tbw NULL E:/Programs/VHDL/ONE_BIT_COMP/ONE_BIT_COMP_TBW.ant sub00/vhpl02 1394971822
-AR one_bit_comp_tbw testbench_arch E:/Programs/VHDL/ONE_BIT_COMP/ONE_BIT_COMP_TBW.ant sub00/vhpl03 1394971823
-EN one_bit_comp NULL E:/Programs/VHDL/ONE_BIT_COMP/ONE_BIT_COMP.vhd sub00/vhpl00 1394971820
