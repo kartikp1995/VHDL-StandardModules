@@ -1,4 +1,0 @@
-AR full_adder_seq behavioral E:/Programs/VHDL/FULL_ADDER_SEQ/FULL_ADDER_SEQ.vhd sub00/vhpl01 1395518169
-AR full_adder_seq_tbw testbench_arch E:/Programs/VHDL/FULL_ADDER_SEQ/FULL_ADDER_SEQ_TBW.ant sub00/vhpl03 1395518207
-EN full_adder_seq NULL E:/Programs/VHDL/FULL_ADDER_SEQ/FULL_ADDER_SEQ.vhd sub00/vhpl00 1395518168
-EN full_adder_seq_tbw NULL E:/Programs/VHDL/FULL_ADDER_SEQ/FULL_ADDER_SEQ_TBW.ant sub00/vhpl02 1395518206
