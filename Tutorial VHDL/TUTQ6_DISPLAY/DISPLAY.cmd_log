@@ -1,1 +1,0 @@
-xst -ise "E:/Programs/VHDL/Tutorial6 VHDL/TUTQ6_DISPLAY/TUTQ6_DISPLAY.ise" -intstyle ise -ifn DISPLAY.xst -ofn DISPLAY.syr
