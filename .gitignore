@@ -1,9 +1,9 @@
 *.lock
 */isim/*
 xilinxsim.ini
-xst/work/*
+xst/
 genExpectedResults.cmd
-_xmsgs/xst.xmsgs
+_xmsgs
 *_stx.prj
 *_tbxr.exe
 *_gen.prj
